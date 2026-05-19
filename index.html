@@ -59,18 +59,18 @@
         <h2>Me Contacter</h2>
         <p class="contact-subtitle">Une idée de projet, une question sur la vision de Somone Code ? Écrivez-moi.</p>
         
-        <form id="main-contact-form" class="contact-form">
+        <form id="main-contact-form" class="contact-form" action="https://formsubmit.co/somonecode@gmail.com" method="POST">
             <div class="form-group">
                 <label for="name">Nom complet</label>
-                <input type="text" id="name" required placeholder="Votre nom">
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
             </div>
             <div class="form-group">
                 <label for="email">Adresse e-mail</label>
-                <input type="email" id="email" required placeholder="votre@email.com">
+                <input type="email" id="email" name="email" required placeholder="votre@email.com">
             </div>
             <div class="form-group">
                 <label for="message">Votre message</label>
-                <textarea id="message" rows="5" required placeholder="Comment puis-je vous aider ?"></textarea>
+                <textarea id="message" name="message" rows="5" required placeholder="Comment puis-je vous aider ?"></textarea>
             </div>
             <button type="submit" class="btn-submit">Envoyer le message</button>
         </form>
