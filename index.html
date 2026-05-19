@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somone Code - Digital Academy & Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Somone<span>Code</span></div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="vision.html">La Vision</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </header>
+
+    <section id="accueil" class="hero-section">
+        <div class="hero-content">
+            <h1>Somone Code</h1>
+            <p>Le début d'un parcours technologique. Apprendre le développement web, documenter ma progression et bâtir des solutions digitales éthiques depuis Somone.</p>
+            <a href="vision.html" class="btn-explorer">Découvrir la vision</a>
+        </div>
+    </section>
+
+   <section id="projets" class="features-section">
+        <h2>Les Fondations du Projet</h2>
+        <div class="cards-grid">
+            
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Maîtrise des Bases</h3>
+                <p>Actuellement en formation intensive sur les technologies du Web (HTML5, CSS3, JavaScript ES6+). Cette vitrine évolutive est le premier témoin de ma montée en compétences.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>La Vision Academy</h3>
+                <p>L'objectif à long terme de Somone Code : créer un pôle de formation local pour transmettre gratuitement ou à moindre coût les compétences numériques aux jeunes de la commune.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🛡️</div>
+                <h3>Services Web Éthiques</h3>
+                <p>Conception et développement de sites vitrines modernes pour les entrepreneurs locaux. Des solutions performantes, développées dans le respect strict de mes principes de vie.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Me Contacter</h2>
+        <p class="contact-subtitle">Une idée de projet, une question sur la vision de Somone Code ? Écrivez-moi.</p>
+        
+        <form id="main-contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" required placeholder="votre@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea id="message" rows="5" required placeholder="Comment puis-je vous aider ?"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer le message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Somone Code - Digital Solutions. Tous droits réservés.</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
