@@ -41,3 +41,11 @@ if (boutonTheme) {
         }
     });
 }
+
+// Vide le formulaire automatiquement si l'utilisateur revient en arrière dans son navigateur
+window.addEventListener('pageshow', function(evenement) {
+    const formulaire = document.getElementById('main-contact-form');
+    if (formulaire) {
+        formulaire.reset();
+    }
+});
