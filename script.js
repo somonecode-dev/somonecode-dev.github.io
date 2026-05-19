@@ -6,18 +6,16 @@ const formulaire = document.getElementById('main-contact-form');
 // On met une condition "if" : on exécute ce code UNIQUEMENT si le formulaire existe dans la page
 if (formulaire) {
     formulaire.addEventListener('submit', function(evenement) {
-        evenement.preventDefault();
+        // evenement.preventDefault(); // Désactivé pour laisser FormSubmit envoyer le mail
 
         const nomUtilisateur = document.getElementById('name').value;
         const emailUtilisateur = document.getElementById('email').value;
 
-        const messageDeConfirmation = `Assalamou alaykoum ${nomUtilisateur} ! Votre message a bien été pris en compte. Somone Code vous recontactera rapidement sur l'adresse : ${emailUtilisateur}.`;
+        const messageDeConfirmation = `Assalamou alaykoum ${nomUtilisateur} ! Votre message va être envoyé. Somone Code vous recontactera rapidement sur l'adresse : ${emailUtilisateur}.`;
 
         alert(messageDeConfirmation);
-        formulaire.reset();
     });
 }
-
 // ==========================================================================
 // 2. LOGIQUE DU MODE SOMBRE INTELLIGENT (Pour toutes les pages)
 // ==========================================================================
